@@ -1,0 +1,135 @@
+/* Utilities (classes that can be used anywhere in the project)
+    - the "container" class is for the navbars links (that way they stay in the middle of the screen and do not extend beyond 1100px)
+    - the "text-primary" class is for styling a single word different from that of its surrounding text
+    - the "lead" class is for styling a single paragraph different from that of its surrounding paragraphs
+*/
+
+.heading-top-left {
+    font-size: 3vh;
+    padding-left: 22.5vw;
+    padding-right: auto;
+}
+
+.heading-top-right {
+    font-size: 3vh;
+    top: 94.25vh;
+    right: 4vw;
+}
+
+.heading-top-right:hover, .heading-top-right:active {
+    color: #fff;
+}
+
+/* Intro Text */
+
+.intro .intro-text h1 {
+    padding-bottom: 11vh;
+}
+
+
+/* Showcase */
+
+#showcase {
+    background: url('../img/indiana11.jpg') no-repeat center center/cover;
+}
+
+#slidy-container {
+    visibility: hidden;
+}
+
+/* Side Menu */
+
+#sideMenu li {
+    text-align: justify;
+    margin-left: 35vw;
+    margin-right: 20vw;
+}
+
+#sideMenu #mainLinks {
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+#sideMenu #activityLinks {
+    padding-top: 3vh;
+}
+
+#sideMenu #home {
+    padding-left: 14vw;
+}
+
+#sideMenu #about {
+    padding-left: 14.4vw;
+}
+
+#sideMenu #contact {
+    padding-left: 11.7vw;
+}
+
+#sideMenu #biking {
+    padding-left: 14.6vw;
+}
+
+#sideMenu #camping {
+    padding-left: 10.15vw;
+}
+
+#sideMenu #climbing {
+    padding-left: 10.75vw;
+}
+
+#sideMenu #diskGolf {
+    padding-left: 11vw;
+}
+
+#sideMenu #eateries {
+    padding-left: 13.25vw;
+}
+
+#sideMenu #fairs {
+    padding-left: 17.95vw;
+}
+
+#sideMenu #fishing {
+    padding-left: 14.15vw;
+}
+
+#sideMenu #fitness {
+    padding-left: 14.3vw;
+}
+
+#sideMenu #golf {
+    padding-left: 19.65vw;
+}
+
+#sideMenu #hiking {
+    padding-left: 15.9vw;
+}
+
+#sideMenu #holidays {
+    padding-left: 12vw;
+}
+
+#sideMenu #hunting {
+    padding-left: 12.3vw;
+}
+
+#sideMenu #kayaking {
+    padding-left: 10.95vw;
+}
+
+#sideMenu #martialArts {
+    padding-left: 6.95vw;
+}
+
+#sideMenu #parks {
+    padding-left: 18.15vw;
+}
+
+#sideMenu #swimming {
+    padding-left: 9.5vw;
+}
+
+#sideMenu #tourism {
+    padding-left: 13.9vw;
+}

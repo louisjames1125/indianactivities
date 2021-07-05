@@ -1,0 +1,155 @@
+.intro {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vw;
+    padding-top: 11%;
+}
+
+.intro .intro-text h1 {
+    text-align: center;
+    padding-bottom: 18vh;
+}
+
+.slider {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    transform: translateY(100%);
+}
+
+/* Hiding the text */
+
+.hide {
+    background: #fff;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(1000%);
+    display: inline-block;
+}
+
+/* Making the Indiana logo slowly fade-in */
+
+.fade-in {
+    animation: fadeIn ease 4.5;
+    -webkit-animation: fadeIn ease 4.5s;
+    -moz-animation: fadeIn ease 4.5s;
+    -o-animation: fadeIn ease 4.5s;
+    -ms-animation: fadeIn ease 4.5s;
+}
+
+.fade-out {
+    animation: fadeOut ease .5s;
+    -webkit-animation: fadeOut ease .5s;
+    -moz-animation: fadeOut ease .5s;
+    -o-animation: fadeOut ease .5s;
+    -ms-animation: fadeOut ease .5;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

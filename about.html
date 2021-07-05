@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="A website to find every Indiana travel destination" />
+    <meta name="description" content="Indiana Activities | Home" />
+    <title>Indiana Activities | Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/indiana-fav-icon.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gsap-animations.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 420px)" href="css/iPhone678+.css" />
+    <link rel="stylesheet" media="screen and (min-height: 650px) and (max-height: 675px)" href="css/iPhone678.css" />
+</head>
+
+<body>
+    <!-- The button at the top of every screen -->
+    <h1 class="heading-top-left" onclick="openMainMenu()"><span
+            class="main-heading-text heading-text"><i class="fas fa-map"></i> Indiana Activities</span></h1>
+    <h1 class="heading-top-right" id="soundLogo"><i class="fas fa-volume-mute" id="volume"></i></h1>
+
+    <!-- The navigation that is displayed when you clicn the Indiana Activities button -->
+    <div id="sideMenu">
+        <h1 class="heading-center" style="visibility: hidden !important;"><span class="heading-text"> Welcome
+                Indianaers</span></h1>
+        <ul id="mainLinks">
+            <li><a href="index.html">Home<i class="fas fa-home" id="home"></i></a></li>
+            <li><a href="about.html" class="currentPage">About<i class="fas fa-question-circle" id="about"></i></a></li>
+            <li><a href="contact.html">Contact<i class="fas fa-phone" id="contact"></i></a></li>
+        </ul>
+        <hr />
+        <ul id="activityLinks">
+            <li><a href="biking.html">Biking<i class="fas fa-bicycle" id="biking"></i></a></li>
+            <li><a href="camping.html">Camping<i class="fas fa-campground" id="camping"></i></a></li>
+            <li><a href="climbing.html">Climbing<i class="fas fa-hand-rock" id="climbing"></i></a></li>
+            <li><a href="diskGolf.html">Disk Golf<i class="fas fa-compact-disc" id="diskGolf"></i></a></li>
+            <li><a href="eateries.html">Eateries<i class="fas fa-utensils" id="eateries"></i></a></li>
+            <li><a href="fairs.html">Fairs<i class="fas fa-tractor" id="fairs"></i></a></li>
+            <li><a href="fishing.html">Fishing<i class="fas fa-fish" id="fishing"></i></a></li>
+            <li><a href="fitness.html">Fitness<i class="fas fa-dumbbell" id="fitness"></i></a></li>
+            <li><a href="golf.html">Golf<i class="fas fa-golf-ball" id="golf"></i></a></li>
+            <li><a href="hiking.html">Hiking<i class="fas fa-hiking" id="hiking"></i></a></li>
+            <li><a href="holidays.html">Holidays<i class="fas fa-candy-cane" id="holidays"></i></a></li>
+            <li><a href="hunting.html">Hunting<i class="fas fa-crow" id="hunting"></i></a></li>
+            <li><a href="kayaking.html">Kayaking<i class="fas fa-ship" id="kayaking"></i></a></li>
+            <li><a href="martialArts.html">Martial Arts<i class="fas fa-hands-helping" id="martialArts"></i></a></li>
+            <li><a href="parks.html">Parks<i class="fas fa-sun" id="parks"></i></a></li>
+            <li><a href="swimming.html">Swimming<i class="fas fa-swimmer" id="swimming"></i></a></li>
+            <li><a href="tourism.html">Tourism<i class="fas fa-hotel" id="tourism"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- The slideshow -->
+    <div id="showcase" style="overflow-y: hidden !important;">
+        <div id="slidy-container">
+            <figure id="slidy">
+                <img src="img/0.jpg">
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg">
+                <img src="img/4.jpg">
+                <img src="img/5.jpg">
+                <img src="img/6.jpg">
+                <img src="img/7.jpg">
+                <img src="img/8.jpg">
+                <img src="img/9.jpg">
+                <img src="img/10.jpg">
+                <img src="img/11.jpg">
+                <img src="img/12.jpg">
+                <img src="img/13.jpg">
+                <img src="img/14.jpg">
+                <img src="img/15.jpg">
+                <img src="img/16.jpg">
+                <img src="img/17.jpg">
+                <img src="img/18.jpg">
+            </figure>
+        </div>
+    </div>
+
+    <!-- Audio for the homepage sound button -->
+    <audio id="backgroundNoise" loop autoplay>
+        <source src="./mp3/ambience.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Script tags for everything JavaScript related -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+        integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/homepage-script.js"></script>
+    <script src="js/gsap-animations.js"></script>
+</body>
+
+</html>
